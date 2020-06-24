@@ -11,9 +11,10 @@ document.addEventListener('DOMContentLoaded', () => {
     generateBtn.addEventListener('click', () => {
          clear()
          let q = document.createTextNode(generateQuotes())
+         console.log(q)
          paragraph.appendChild(q)
     })
-    
+
     /* Clear function */
     function clear(){
        paragraph.innerHTML =''
